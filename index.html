@@ -5,56 +5,141 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png" />
-
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=Public+Sans:wght@300;400&display=swap" rel="stylesheet">
     <title>Frontend Mentor | PayAPI Website Challenge</title>
   </head>
 
   <body>
-    Pricing
-    About
-    Contact
-    Schedule a Demo
-
-    Start building with our APIs for absolutely free.
-    Enter email address 
-    Schedule a Demo
-    Have any questions? Contact Us
-
-    Who we work with
-    Today, millions of people around the world have successfully connected 
-    their accounts to apps they love using our API. We provide developers 
-    with the tools they need to create easy and accessible experiences 
-    for their users.
-    About Us
-
-    Easy to implement
-    Our API comes with just a few lines of code. You’ll be up and running in 
-    no time. We built our documentation page to integrate payments functionality 
-    with ease.
-
-    Simple UI & UX
-    Our pre-built form is easy to integrate in your app or website’s checkout 
-    flow and designed to optimize conversion.
-
-    Personal Finances
-    Consolidate financial data from multiple sources and categorize transactions up to
-    2 years of history. Analyze reports to reconcile activities in your account.
-
-    Banking & Coverage
-    With our platform, you can speed up account onboarding and support ongoing payments 
-    for checking, savings, credit card, and brokerage accounts.
-
-    Consumer Payments
-    It’s easier to set up secure bank payments with us through a flow designed with the 
-    user experience in mind. Customers could instantly authenticate their account.
-
-    Ready to start? 
-    Enter email address 
-    Schedule a Demo
-
-    Pricing
-    About
-    Contact
+    <div class="container">
+      <header>
+        <figure>
+          <img src="assets/shared/desktop/logo.svg" alt="Payapi logo icon">
+        </figure>
+        <nav>
+          <ul>
+            <li>Pricing</li>
+            <li>About</li>
+            <li>Contact</li>
+          </ul>
+        </nav>
+        <button class="schedule-button">Schedule a Demo</button>
+      </header>
+      <section class="hero">
+        <div class="hero-text">
+          <h1>Start building with our APIs for absolutely free.</h1>
+          <div class="schedule-form">
+            <input type="email" name="email-schedule" id="email-schedule-input" placeholder="Enter email address">
+            <button class="schedule-button">Schedule email address</button>
+          </div>
+          <small>Have any question? <a href="">Contact Us</a></small>
+        </div>
+        <picture class="mobile-mockup-hero">
+          <img src="assets/home/desktop/illustration-phone-mockup.svg" alt="">
+        </picture>
+      </section>
+      <section class="references">
+        <div class="references-description">
+          <h2>Who we work</h2>
+          <p>
+            Today, millions of people around the world have successfully connected
+            their accounts to apps they love using our API. We provide developers
+            with the tools they need to create easy and accessible experiences
+            for their users.
+          </p>
+          <button class="about-us-button">
+            About us
+          </button>
+        </div>
+        <div class="enterprises-logos-container">
+          <img src="assets/shared/desktop/tesla.svg" alt="">
+          <img src="assets/shared/desktop/microsoft.svg" alt="">
+          <img src="assets/shared/desktop/hewlett-packard.svg" alt="">
+          <img src="assets/shared/desktop/oracle.svg" alt="">
+          <img src="assets/shared/desktop/google.svg" alt="">
+          <img src="assets/shared/desktop/nvidia.svg" alt="">
+        </div>
+      </section>
+      <main>
+        <div class="easy-to-implement-container">
+          <figure class="easy-to-implement-img">
+            <img src="assets/home/desktop/illustration-easy-to-implement.svg" alt="illustration">
+          </figure>
+          <div class="easy-to-implement-description">
+            <h2>Easy to implement</h2>
+            <p>
+              Our API comes with just a few lines of code. You’ll be up and running in
+              no time. We built our documentation page to integrate payments functionality
+              with ease.
+            </p>
+          </div>
+        </div>
+        <div class="simple-ui-container">
+          <div class="simple-ui-description">
+            <h2>
+              Simple UI & UX
+            </h2>
+            <p>
+              Our pre-built form is easy to integrate in your app or website’s checkout
+              flow and designed to optimize conversion.
+            </p>
+          </div>
+          <figure class="simple-ui-img">
+            <img src="assets/home/desktop/illustration-simple-ui.svg" alt="simple ui illustration">
+          </figure>
+        </div>
+        <div class="perks-container">
+          <div class="perk">
+            <img src="assets/home/desktop/icon-personal-finances.svg" alt="finances icon">
+            <h3><small>Personal Finances</small></h3>
+            <p>
+              Consolidate financial data from multiple sources and categorize transactions up to
+              2 years of history. Analyze reports to reconcile activities in your account.
+            </p>
+          </div>
+          <div class="perk">
+            <img src="assets/home/desktop/icon-banking-and-coverage.svg" alt="finances icon">
+            <h3><small>Banking & Coverage</small></h3>
+            <p>
+              With our platform, you can speed up account onboarding and support ongoing payments
+              for checking, savings, credit card, and brokerage accounts.
+            </p>
+          </div>
+          <div class="perk">
+            <img src="assets/home/desktop/icon-consumer-payments.svg" alt="finances icon">
+            <h3><small>Consumer Payments</small></h3>
+            <p>
+              It’s easier to set up secure bank payments with us through a flow designed with the
+              user experience in mind. Customers could instantly authenticate their account.
+            </p>
+          </div>
+        </div>
+        <div class="main-footer">
+          <h2>
+            Ready to start?
+          </h2>
+          <div class="schedule-form">
+            <input type="email" name="email-schedule" id="email-schedule-input" placeholder="Enter email address">
+            <button class="schedule-button">Schedule email address</button>
+          </div>
+        </div>
+      </main>
+      <footer>
+        <figure>
+          <img src="assets/shared/desktop/logo.svg" alt="Payapi logo icon">
+        </figure>
+        <nav>
+          <ul>
+            <li>Pricing</li>
+            <li>About</li>
+            <li>Contact</li>
+          </ul>
+        </nav>
+        <div class="social-links">
+          <img class="social-link-icon" src="assets/shared/desktop/facebook.svg" alt="facebook link icon">
+          <img class="social-link-icon" src="assets/shared/desktop/twitter.svg" alt="twitter link icon">
+          <img class="social-link-icon" src="assets/shared/desktop/linkedin.svg" alt="linkedin link icon">
+        </div>
+      </footer>
+    </div>
   </body>
-
 </html>
