@@ -1,0 +1,305 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --dark-pink: #ba4270;
+    --link-water-white: #fbfcfe;
+    --san-juan-blue: #36536b;
+    --mirage-blue: #1b262f;
+    --charm-pink: #da6d97;
+    --light-san-juan-blue: #6c8294;
+}
+
+body {
+    font-family: 'Public Sans', sans-serif;
+    font-size: 15px;
+    background-color: #EDF3F8;
+    color: #6c8294;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Roboto', sans-serif;
+    color: #36536b;
+}
+
+.container {
+    max-width: 1130px;
+    padding: 0 10px;
+    margin: 0 auto;
+    flex: 1;
+    display: inherit;
+    justify-content: inherit;
+    align-items: inherit;
+    height: inherit;
+    flex-wrap: inherit;
+}
+
+header{
+    background-image: url("../assets/shared/desktop/bg-pattern-circle.svg");
+    background-repeat: no-repeat;
+    background-position: calc(50% + 450px) -150px ;
+    padding-top: 40px;
+}
+ .navbar{
+    display: flex;
+    align-items: center;
+    height: 48px;
+    margin-bottom: 40px;
+}
+
+.logo-img {
+    height: 38px;
+}
+
+nav ul {
+    display: flex;
+}
+
+li {
+    list-style: none;
+}
+
+li a {
+    text-decoration: none;
+    margin-left: 70px;
+    color: var(--light-san-juan-blue);
+}
+
+a:hover {
+    color: var(--san-juan-blue);
+}
+
+.schedule-button {
+    margin-left: auto;
+    border: none;
+    background-color: var(--dark-pink);
+    font-size: 15px;
+    color: #EDF3F8;
+    height: 48px;
+    width: 173px;
+    border-radius: 50px;
+    box-shadow: 10px 10px 25px rgba(54, 83, 107, .25);
+}
+.hero {
+    display: flex;
+    align-items: center;
+}
+.hero-text {
+    max-width: 546px;
+}
+
+h1 {
+    font-size: 72px;
+    color: #36536b;
+    font-weight: 400;
+    line-height: 72px;
+}
+
+.schedule-form {
+    width: 445px;
+    height: 48px;
+    margin-top: 40px;
+    margin-bottom: 15px;
+    position: relative;
+    border-radius: 48px;
+    box-shadow: 10px 10px 25px rgba(54, 83, 107, .25);
+}
+
+.schedule-form input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 48px;
+    padding: 0 20px;
+    background-color: #fbfcfe;
+    font-size: 15px;
+}
+
+.schedule-form .schedule-button {
+    position: absolute;
+    right: 0;
+    box-shadow: none;
+}
+
+.hero-text small, a {
+    color: #6c8294;
+    font-size: 15px;
+}
+.hero-text small {
+    margin-left: 20px;
+}
+
+.mobile-mockup-hero {
+    margin-left: auto;
+}
+
+.references {
+    background-color: #1B262F;
+    color: white;
+    height: 472px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-image: url("../assets/shared/desktop/bg-pattern-circle.svg");
+    background-repeat: no-repeat;
+    background-position: calc(50% - 550px) -350px;
+}
+
+.references-description {
+    width: 445px;
+
+}
+
+h2{
+    font-size: 48px;
+    line-height: 56px;
+}
+
+.references-description h2 {
+    color: #fbfcfe;
+}
+
+.references-description p {
+    line-height: 28px;
+    opacity: .8;
+    margin: 15px 0 30px;
+}
+
+.about-us-button {
+    height: 48px;
+    width: 129px;
+    border: 1px solid #fbfcfe;
+    background-color: transparent;
+    color: #fbfcfe;
+    font-size: 15px;
+    border-radius: 48px;
+}
+
+.enterprises-logos-container {
+    width: auto;
+    display: grid;
+    grid-template: 1fr 1fr / 1fr 1fr 1fr;
+    justify-items: end;
+    gap: 30px;
+}
+.tesla-icon,
+.oracle-icon {
+    justify-self: start;
+}
+.google-icon {
+    justify-self: center;
+}
+
+path {
+    fill: #fbfcfe !important;
+}
+g {
+    fill: #fbfcfe;
+}
+
+main {
+    background-image: url("../assets/shared/desktop/bg-pattern-circle.svg");
+    background-repeat: no-repeat;
+    background-position: calc(50% + 700px) ;
+}
+
+.easy-to-implement-container,
+.simple-ui-container{
+    display: flex;
+    align-items: center;
+}
+
+.easy-to-implement-description,
+.simple-ui-description{
+    width: 445px;
+}
+
+main h2{
+    font-weight: 350;
+}
+
+main p {
+    line-height: 28px;
+}
+
+.easy-to-implement-img{
+    margin-left: -30px;
+}
+
+.simple-ui-img {
+    margin-right: -250px;
+}
+
+.perks-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.perk {
+    text-align: center;
+}
+
+h3 small {
+    font-weight: normal;
+    font-size: 18px;
+}
+
+h3 {
+    margin: 20px 0;
+}
+
+
+.ready-to-start-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 100px 0;
+}
+
+.ready-to-start-container                                                            .schedule-form {
+    margin: 0;
+}
+
+footer {
+    display: flex;
+    background-color: #1B262F;
+    height: 100px;
+    align-items: center;
+    background-image: url("../assets/shared/desktop/bg-pattern-circle.svg");
+    background-repeat: no-repeat;
+    background-position: calc(50% + 700px) 20% ;
+}
+
+footer a {
+    color: #fbfcfe;
+    opacity: .8;
+}
+
+footer a:hover {
+    color: #fbfcfe;
+    opacity: 1;
+}
+
+.social-links {
+    margin-left: auto;
+}
+
+.social-link-icon {
+    margin-left: 20px;
+}
+
+.schedule-button:hover {
+    background-color: #da6d97;
+}
+
+.about-us-button:hover {
+    background-color: #fbfcfe;
+    color: #1B262F;
+}
