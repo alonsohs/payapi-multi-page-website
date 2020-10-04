@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+*:focus {
+    outline: none;
+}
+
 :root {
     --dark-pink: #ba4270;
     --link-water-white: #fbfcfe;
@@ -297,6 +301,10 @@ footer a:hover {
 }
 .social-links a:hover  path{
     fill:#da6d97 !important;
+}
+
+.schedule-form input:focus {
+    color: #36536b;
 }
 
 .schedule-button:hover {
