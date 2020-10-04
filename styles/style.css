@@ -293,6 +293,10 @@ footer a:hover {
 
 .social-link-icon {
     margin-left: 20px;
+    opacity: 1;
+}
+.social-links a:hover  path{
+    fill:#da6d97 !important;
 }
 
 .schedule-button:hover {
