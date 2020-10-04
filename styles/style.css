@@ -43,6 +43,7 @@ h4 {
     align-items: inherit;
     height: inherit;
     flex-wrap: inherit;
+    flex-direction: inherit;
 }
 
 header{
@@ -318,4 +319,132 @@ footer a:hover {
 .about-us-button:hover {
     background-color: #fbfcfe;
     color: #1B262F;
+}
+
+@media screen and (max-width: 1040px){
+
+    .container {
+        padding: 0 40px;
+        margin: 0;
+        width: 100vw;
+    }
+
+    header {
+        background-size: 150%;
+        background-position: center -110vw;
+        margin-bottom: 10vw;
+    }
+    .navbar {
+        margin-bottom: 10px;
+    }
+
+    li a {
+        margin-left: 6vw;
+    }
+
+    li:nth-child(1){
+        margin-left: 2vw;
+    }
+
+
+
+    .hero {
+        flex-direction: column-reverse;
+    }
+
+    .mobile-mockup-hero {
+        margin-left: 80px;
+        width: 300px;
+    }
+
+    .mobile-mockup-hero img {
+        width: inherit;
+    }
+
+    .hero-text {
+        max-width: 600px;
+        margin-top: -20px;
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h1 {
+        font-size: 48px;
+    }
+
+    .hero-text .schedule-form {
+        margin: 15px 0;
+    }
+
+    .hero-text small {
+        margin-left: 0;
+    }
+
+    .references {
+        height: 615px;
+        flex-direction: column-reverse;
+        justify-content: space-evenly;
+        background-position: center -73vw;
+    }
+
+    main {
+        background-image: none;
+    }
+
+    .references-description {
+        text-align: center;
+    }
+
+    .easy-to-implement-container {
+        flex-direction: column;
+    }
+
+    .easy-to-implement-img {
+        width: 65vw;
+        margin-left: 3vw;
+    }
+
+    .easy-to-implement-description,
+    .simple-ui-description {
+        text-align: center;
+        margin-top: -40px;
+        margin-bottom: 40px;
+        width: 573px;
+    }
+
+    .simple-ui-container {
+        flex-direction: column-reverse;
+    }
+
+    .simple-ui-img {
+        width: 60vw;
+        margin-left: 6vw;
+    }
+
+    .simple-ui-description{
+        margin: -20px 0 100px;
+    }
+
+    .perks-container {
+        gap: 10px;
+    }
+
+    .perk img {
+        width: 88px;
+    }
+
+    h3 {
+        margin-top: 30px;
+    }
+
+    .ready-to-start-container {
+        flex-direction: column;
+        height: 130px;
+    }
+
+    footer{
+        background-position:calc(50% + 400px) 20% ;
+    }
 }
