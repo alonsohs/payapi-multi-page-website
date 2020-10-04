@@ -238,7 +238,11 @@ main p {
 }
 
 .simple-ui-img {
-    margin-right: -250px;
+    overflow: hidden;
+}
+
+.simple-ui-img img{
+    width: inherit;
 }
 
 .perks-container {
