@@ -52,7 +52,7 @@ header{
     background-position: calc(50% + 450px) -150px ;
     padding-top: 40px;
 }
- .navbar{
+.navbar{
     display: flex;
     align-items: center;
     height: 48px;
@@ -61,6 +61,13 @@ header{
 
 .logo-img {
     height: 38px;
+}
+
+.menu {
+    width: 100%;
+    display: inherit;
+    height: inherit;
+    align-items: center;
 }
 
 nav ul {
@@ -125,6 +132,7 @@ h1 {
     padding: 0 20px;
     background-color: #fbfcfe;
     font-size: 15px;
+
 }
 
 .schedule-form .schedule-button {
@@ -447,4 +455,189 @@ footer a:hover {
     footer{
         background-position:calc(50% + 400px) 20% ;
     }
+}
+
+
+@media screen and (max-width: 767px){
+
+    .container {
+        padding: 0 24px;
+    }
+
+    header{
+        background-position: center -90vw;
+    }
+    .menu-button {
+        width: 30px;
+        height: 30px;
+        background-image: url("../assets/shared/mobile/menu.svg");
+        background-repeat: no-repeat;
+        background-position: center center;
+        position: absolute;
+        z-index: 1;
+        right: 24px;
+    }
+
+    header .menu {
+        position: absolute;
+        background-color: rgba(27, 38, 47, .8);
+        top: 0;
+        right: -80vw;
+        height: 100vh;
+        width: 80vw;
+        z-index: 1;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+        display: none;
+    }
+
+    nav {
+        height: 150px;
+        margin-top: 100px;
+    }
+
+    header nav::before {
+        content: "";
+        border-bottom: 1px solid #fbfcfe;
+        width: 92%;
+        position: absolute;
+        left: 4%;
+    }
+
+     nav ul  {
+         height: inherit;
+        flex-direction: column;
+         align-items:center;
+         justify-content: space-evenly;
+         margin-top: 20px;
+
+    }
+
+     nav ul li a {
+         margin: 0;
+         color: #fbfcfe;
+         opacity: .8;
+     }
+    nav ul li a:hover {
+        color: #fbfcfe;
+        opacity: 1;
+    }
+    li:nth-child(1){
+        margin-left: 0;
+    }
+
+     .menu .schedule-button{
+         margin: 20px 0 0 0;
+     }
+
+     .mobile-mockup-hero {
+         width: 200px;
+         margin-left: 10vw;
+     }
+
+     .hero-text {
+         width: 100%;
+     }
+     h1 {
+         font-size: 30px;
+         line-height: 36px;
+     }
+
+     .schedule-form {
+         position: static;
+         width: 100%;
+         height: auto;
+         box-shadow: none;
+     }
+
+     .schedule-form .schedule-button{
+         position: static;
+         width: 100%;
+         margin-top: 15px;
+     }
+
+     .schedule-form input {
+         height: 48px;
+         box-shadow: 10px 10px 25px rgba(54, 83, 107, .25);
+     }
+
+
+     .references{
+         background-position: center -170vw;
+     }
+
+     .enterprises-logos-container {
+         width: 100%;
+         grid-template: 1fr 1fr 1fr /  1fr 1fr;
+         gap: 25px;
+         justify-items: center;
+     }
+
+     .enterprises-logos-container svg {
+         transform: scale(0.8);
+     }
+
+     .references-description {
+         width: 100%;
+     }
+     h2 {
+         font-size: 32px;
+         font-weight: 300;
+     }
+
+     .easy-to-implement-container {
+         margin-top: 50px;
+     }
+
+    .easy-to-implement-description,
+    .simple-ui-description{
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+    .easy-to-implement-img,
+    .simple-ui-img{
+        width: 90vw;
+    }
+
+
+
+  .perks-container {
+      grid-template: 1fr 1fr 1fr / 1fr;
+      gap: 40px;
+  }
+
+  .ready-to-start-container {
+      margin: 80px 0;
+      height: auto;
+  }
+  .ready-to-start-container .schedule-form {
+      margin-top: 20px;
+  }
+
+  footer {
+      flex-direction: column;
+      justify-content: space-evenly;
+      height: 353px;
+      background-position: center 50vw;
+  }
+
+  footer nav {
+      height: 120px;
+  }
+
+  footer nav ul {
+    justify-content: space-between;
+  }
+  footer nav,
+  footer nav ul {
+      margin-top: 0;
+  }
+
+  .social-links {
+      margin: 0;
+  }
+
+
 }
