@@ -280,7 +280,7 @@ h3 {
     margin: 100px 0;
 }
 
-.ready-to-start-container                                                            .schedule-form {
+.ready-to-start-container .schedule-form {
     margin: 0;
 }
 
@@ -467,6 +467,7 @@ footer a:hover {
     header{
         background-position: center -90vw;
     }
+
     .menu-button {
         width: 30px;
         height: 30px;
@@ -478,9 +479,16 @@ footer a:hover {
         right: 24px;
     }
 
+    .menu-button.active {
+        background-image: url("../assets/shared/mobile/close.svg");
+    }
+
     header .menu {
-        position: absolute;
-        background-color: rgba(27, 38, 47, .8);
+        position: fixed;
+        background-color: rgb(27, 38, 47);
+        background-image: url("../assets/shared/desktop/bg-pattern-circle.svg");
+        background-repeat: no-repeat;
+        background-position: center -73.5vh;
         top: 0;
         right: -80vw;
         height: 100vh;
@@ -489,7 +497,11 @@ footer a:hover {
         flex-direction: column;
         align-items: center;
         justify-content: start;
-        display: none;
+        transition: 1s;
+    }
+
+    .menu.active {
+        right: 0;
     }
 
     nav {
@@ -638,6 +650,5 @@ footer a:hover {
   .social-links {
       margin: 0;
   }
-
 
 }
