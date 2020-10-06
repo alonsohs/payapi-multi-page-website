@@ -32,6 +32,10 @@ h4 {
     font-family: 'Roboto', sans-serif;
     color: #36536b;
 }
+h1 small {
+    font-size: 56px ;
+    font-weight: 350;
+}
 
 .container {
     max-width: 1130px;
@@ -481,6 +485,7 @@ footer a:hover {
 
     .menu-button.active {
         background-image: url("../assets/shared/mobile/close.svg");
+        position: fixed;
     }
 
     header .menu {

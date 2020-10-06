@@ -1,0 +1,80 @@
+body {
+    background-color: #EDF3F8;
+    background-image: url("../assets/shared/desktop/bg-pattern-circle.svg");
+    background-repeat: no-repeat;
+    background-position: calc(50% + 450px) -180%;
+}
+
+header{
+    background-color: transparent;
+    background-image: none;
+}
+main {
+    margin-top: 20px;
+    background-image: none;
+    background-color: transparent;
+}
+.pricing-plan-container {
+    margin-top: 20px;
+    display: grid;
+    grid-template:  1fr / repeat(3, 1fr) ;
+    gap: 2em;
+}
+
+.pricing-plan h3 {
+    color: #ba4270;
+    font-size: 32px;
+    font-weight: 300;
+    margin: 10px 0;
+}
+
+.pricing-plan h1 {
+    margin: 10px 0;
+}
+
+.pricing-plan h1 small {
+    font-weight: 350;
+}
+
+.pricing-plan hr {
+    color:rgba(108,130,148, .5) ;
+    background-color: rgba(108,130,148,.5) ;
+    border-width: 0;
+    height: 1px;
+}
+.pricing-available-actions {
+    padding: 20px 0;
+}
+.available-action {
+    display: flex;
+    align-items: center;
+
+}
+
+.available-action img {
+    height: 11px;
+}
+
+.available-action.not-available img {
+    opacity: 0;
+}
+
+.available-action p {
+    color: #36536b;
+    margin-left: 1em;
+}
+
+.available-action.not-available p {
+    color: rgba(108,130,148,.6);
+}
+
+.request-access-button {
+    background-color: #EDF3F8;
+    border: 1px solid #36536b;
+    color: #36536b;
+    height: 48px;
+    width: 168px;
+    border-radius: 48px;
+    margin-top: 25px;
+}
+
