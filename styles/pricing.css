@@ -78,3 +78,38 @@ main {
     margin-top: 25px;
 }
 
+.request-access-button:hover {
+    color: #fbfcfe;
+    background-color: #36536b;
+}
+
+@media screen and (max-width: 1040px) {
+    body {
+        background-position: calc(50% + 500px) -500px;
+    }
+
+    .pricing {
+        text-align: center;
+    }
+
+    .pricing-plan-container {
+        margin-top: 30px;
+    }
+
+    .pricing-plan h1 {
+        margin: 20px 0;
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+    .pricing-plan-container {
+        grid-template: repeat(3, 1fr) / 1fr;
+    }
+
+
+    .available-action {
+        width: 130px;
+        margin: 0 auto;
+    }
+}
