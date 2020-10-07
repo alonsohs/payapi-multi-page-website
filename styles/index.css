@@ -37,6 +37,18 @@ h1 small {
     font-weight: 350;
 }
 
+h3 {
+    font-size: 32px;
+    font-weight: 300;
+}
+
+hr {
+    color:rgba(108,130,148, .5) ;
+    background-color: rgba(108,130,148,.5) ;
+    border-width: 0;
+    height: 1px;
+}
+
 .container {
     max-width: 1130px;
     padding: 0 10px;
@@ -503,7 +515,7 @@ footer a:hover {
         flex-direction: column;
         align-items: center;
         justify-content: start;
-        transition: 1s;
+        transition: .7s;
     }
 
     .menu.active {

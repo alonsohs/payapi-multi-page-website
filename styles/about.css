@@ -1,0 +1,120 @@
+body {
+    background-color: #EDF3F8;
+    background-image: url("../assets/shared/desktop/bg-pattern-circle.svg");
+    background-repeat: no-repeat;
+    background-position: calc(50% + 500px) -600px;
+}
+
+header{
+    background-color: transparent;
+    background-image: none;
+}
+
+.main-title {
+    max-width: 730px;
+}
+
+.main-title h1 small {
+    line-height: 80%;
+}
+
+.about-content-container {
+    margin: 50px 0 70px ;
+}
+
+.about-item {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    max-width: 920px;
+    align-content: start;
+}
+
+.about-item:nth-of-type(1) {
+    margin-bottom: 48px;
+}
+
+.about-title h3 {
+    margin: 0;
+}
+
+.about-img {
+    content: url("../assets/about/desktop/image-team-members.jpg");
+    width: 100%;
+
+}
+
+.company-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    margin-top: 48px;
+}
+
+.stat hr {
+    margin-bottom: 20px;
+}
+
+.company-stats h3 {
+    color: #ba4270;
+    font-size: 56px;
+    font-weight: 300;
+    margin: 10px 0;
+}
+
+@media screen and (max-width: 1140px) {
+
+    body {
+        background-position: calc(50% + 500px) -500px;
+    }
+
+    .main-title {
+        text-align: center;
+        max-width: 573px;
+        margin: 0 auto;
+    }
+    .main-title small{
+        font-size: 48px;
+    }
+
+}
+
+@media screen and (max-width:767px ) {
+    body {
+        background-position: calc(50% + 350px) -600px;
+    }
+    .main-title small {
+        font-size: 32px;
+    }
+
+    .about-img {
+        content: url("../assets/about/mobile/image-team-members.jpg");
+    }
+
+    .about-item {
+        grid-template: auto 1fr / 1fr;
+        justify-items: center;
+        gap: 20px;
+    }
+
+    .about-description {
+        text-align: center;
+    }
+
+    .company-stats {
+        grid-template: repeat(3, 1fr) / 1fr;
+        gap: 0;
+
+    }
+
+    .company-stats hr {
+        visibility: hidden;
+    }
+
+    .company-stats .mobile-hr {
+        visibility: visible;
+    }
+
+    .stat {
+        text-align: center;
+    }
+}

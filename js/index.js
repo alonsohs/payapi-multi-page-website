@@ -8,7 +8,7 @@ function hideShowMenu() {
         menu.classList.remove('active')
         setTimeout(() => {
             menuButton.classList.remove('active')
-        }, 600)
+        }, 400)
     }
     else{
         menu.classList.add('active')

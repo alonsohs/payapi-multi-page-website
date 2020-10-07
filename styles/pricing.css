@@ -36,12 +36,6 @@ main {
     font-weight: 350;
 }
 
-.pricing-plan hr {
-    color:rgba(108,130,148, .5) ;
-    background-color: rgba(108,130,148,.5) ;
-    border-width: 0;
-    height: 1px;
-}
 .pricing-available-actions {
     padding: 20px 0;
 }
@@ -103,6 +97,10 @@ main {
 }
 
 @media screen and (max-width: 767px) {
+    body {
+        background-position: calc(50% + 350px) -600px;
+
+    }
     .pricing-plan-container {
         grid-template: repeat(3, 1fr) / 1fr;
     }
@@ -113,3 +111,4 @@ main {
         margin: 0 auto;
     }
 }
+
