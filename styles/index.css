@@ -598,7 +598,6 @@ footer a:hover {
      }
 
      .enterprises-logos-container {
-         width: 100%;
          grid-template: 1fr 1fr 1fr /  1fr 1fr;
          gap: 25px;
          justify-items: center;
