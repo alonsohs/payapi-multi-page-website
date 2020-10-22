@@ -40,10 +40,14 @@ main {
     margin: 0;
 }
 
-.about-img {
-    content: url("../assets/about/desktop/image-team-members.jpg");
-    width: 100%;
+.about-img-container {
+    width: 100vw;
+    height: auto;
+    object-fit: fill;
+}
 
+.about-img {
+    width: 100vw;
 }
 
 .company-stats {
